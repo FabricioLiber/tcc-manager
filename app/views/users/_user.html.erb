@@ -1,0 +1,8 @@
+<tr>
+    <td><%= user.tipo %></td>
+    <td><%= user.nome %></td>
+    <td><%= user.matricula %></td>
+    <td><%= link_to 'Detalhes', user %></td>
+    <td><%= link_to 'Editar', edit_user_path(user) %></td>
+    <td><%= link_to 'Deletar', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

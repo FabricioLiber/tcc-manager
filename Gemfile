@@ -3,6 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
+#JQuery
+gem 'jquery-rails'
+# Bootstrap
+gem 'bootstrap'
+#Faker
+gem 'faker'
+#Cocoon
+gem 'cocoon'
+#Kaminari - pagination
+gem 'kaminari'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use postgresql as the database for Active Record
