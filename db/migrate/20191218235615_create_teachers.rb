@@ -3,7 +3,7 @@ class CreateTeachers < ActiveRecord::Migration[5.2]
     create_table :teachers do |t|
       t.string :nome
       t.string :matricula
-      t.bool :apto
+      t.string :especialidade
 
       t.timestamps
     end

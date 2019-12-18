@@ -14,7 +14,7 @@ class TeachersTest < ApplicationSystemTestCase
     visit teachers_url
     click_on "New Teacher"
 
-    fill_in "Apto", with: @teacher.apto
+    fill_in "Especialidade", with: @teacher.especialidade
     fill_in "Matricula", with: @teacher.matricula
     fill_in "Nome", with: @teacher.nome
     click_on "Create Teacher"
@@ -27,7 +27,7 @@ class TeachersTest < ApplicationSystemTestCase
     visit teachers_url
     click_on "Edit", match: :first
 
-    fill_in "Apto", with: @teacher.apto
+    fill_in "Especialidade", with: @teacher.especialidade
     fill_in "Matricula", with: @teacher.matricula
     fill_in "Nome", with: @teacher.nome
     click_on "Update Teacher"

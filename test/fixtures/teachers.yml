@@ -3,9 +3,9 @@
 one:
   nome: MyString
   matricula: MyString
-  apto: 
+  especialidade: MyString
 
 two:
   nome: MyString
   matricula: MyString
-  apto: 
+  especialidade: MyString
