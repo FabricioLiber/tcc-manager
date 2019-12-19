@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: MyString
+  status: MyString
+  nota: 1.5
+
+two:
+  tipo: MyString
+  status: MyString
+  nota: 1.5
