@@ -10,23 +10,25 @@
       </ul>
     </div>
   <% end %>
+  <div class="container">
+    <div class="form-group row">
+      <%= form.label :nome , :class => "col-sm-2 col-form-label"%>
+      <%= form.text_field :nome %>
+    </div>
+    
+    <div class="form-group row">
+      <%= form.label :matricula, :class => "col-sm-2 col-form-label" %>
+      <%= form.text_field :matricula %>
+    </div>
+    
+    <div class="form-group row">
+      <%= form.label :apto, :class => "col-sm-2 col-form-label" %>
+      <%= form.check_box :apto %>
+    </div>
 
-  <div class="form-group row">
-    <%= form.label :nome , :class => "col-sm-2 col-form-label"%>
-    <%= form.text_field :nome %>
-  </div>
-  
-  <div class="form-group row">
-    <%= form.label :matricula, :class => "col-sm-2 col-form-label" %>
-    <%= form.text_field :matricula %>
-  </div>
-  
-  <div class="form-group row">
-    <%= form.label :apto, :class => "col-sm-2 col-form-label" %>
-    <%= form.check_box :apto %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit  "Cadastrar",:class => "btn btn-success" %>
+    <div class="actions">
+    <%= form.submit  "Cadastrar",:class => "btn btn-info" %>
+    <%= link_to 'Voltar', requests_path, :class => "btn btn-danger"%>
+    </div>
   </div>
 <% end %>

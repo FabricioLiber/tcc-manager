@@ -1,23 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Teachers</h1>
+<div class="container">
+  <h1 class="text-center">Professores</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Matricula</th>
-      <th>Especialidade</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Matricula</th>
+        <th>Especialidade</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
 
-  <tbody>
-    <%= render @teachers %>
+    <tbody>
+      <%= render @teachers %>
+    </tbody>
+  </table>
+
+  <br>
+  <div class="row justify-content-center">
     <%= paginate @teachers %>
-  </tbody>
-</table>
+  </div>
 
-<br>
-
-<%= link_to 'New Teacher', new_teacher_path %>
+  <%= link_to 'Novo', new_teacher_path , :class => "btn btn-info"%>
+</div>

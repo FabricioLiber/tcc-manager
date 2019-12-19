@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @student.nome %>
-</p>
+  <p>
+    <strong>Nome:</strong>
+    <%= @student.nome %>
+  </p>
 
-<p>
-  <strong>Matricula:</strong>
-  <%= @student.matricula %>
-</p>
+  <p>
+    <strong>Matricula:</strong>
+    <%= @student.matricula %>
+  </p>
 
-<p>
-  <strong>Apto:</strong>
-  <%= @student.apto %>
-</p>
+  <p>
+    <strong>Apto:</strong>
+    <%= @student.apto %>
+  </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+  <%= link_to 'Editar', edit_student_path(@student) %> |
+  <%= link_to 'Voltar', students_path %>
+</div>

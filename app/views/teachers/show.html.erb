@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @teacher.nome %>
-</p>
+  <p>
+    <strong>Nome:</strong>
+    <%= @teacher.nome %>
+  </p>
 
-<p>
-  <strong>Matricula:</strong>
-  <%= @teacher.matricula %>
-</p>
+  <p>
+    <strong>Matricula:</strong>
+    <%= @teacher.matricula %>
+  </p>
 
-<p>
-  <strong>Especialidade:</strong>
-  <%= @teacher.especialidade %>
-</p>
+  <p>
+    <strong>Especialidade:</strong>
+    <%= @teacher.especialidade %>
+  </p>
 
-<%= link_to 'Edit', edit_teacher_path(@teacher) %> |
-<%= link_to 'Back', teachers_path %>
+  <%= link_to 'Editar', edit_teacher_path(@teacher) %> |
+  <%= link_to 'Voltar', teachers_path %>
+</div>

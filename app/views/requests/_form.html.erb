@@ -10,40 +10,50 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :student_id %>
-    <%= collection_select(:request, :student_id, @students, :id, :nome) %>
-  </div>
-
-  <div class="field">
-    <%= form.label :teacher_id %>
-    <%= collection_select(:request, :teacher_id, @teachers, :id, :nome) %>
-  </div>
-
-  <div class="field">
-    <%= form.label :tipo %>
-    <%= form.text_field :tipo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.text_field :status %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nota %>
-    <%= form.text_field :nota %>
-  </div>
-
-  <%= form.fields_for :document do |document_fields| %>
-    <div class="field">
-      <%= document_fields.label :link %>
-      <%= document_fields.text_field :link %>
+  <div class="container">
+    <div class="form-group row">
+      <%= form.label :student_id , :class => "col-sm-2 col-form-label" %>
+      <div class="col-sm-10">
+        <%= collection_select(:request, :student_id, @students, :id, :nome) %>
+     </div>
     </div>
-  <% end %>
+    <div class="form-group row">
+      <%= form.label :teacher_id , :class => "col-sm-2 col-form-label"%>
+      <div class="col-sm-10">
+        <%= collection_select(:request, :teacher_id, @teachers, :id, :nome) %>
+      </div>
+    </div>
+    <div class="form-group row">
+      <%= form.label :tipo , :class => "col-sm-2 col-form-label"%>
+      <div class="col-sm-10">
+        <%= form.text_field :tipo %>
+      </div>
+    </div>
+    <div class="form-group row">
+      <%= form.label :status , :class => "col-sm-2 col-form-label"%>
+      <div class="col-sm-10">
+        <%= form.text_field :status %>
+      </div>
+    </div>
+    <div class="form-group row">
+      <%= form.label :nota , :class => "col-sm-2 col-form-label"%>
+      <div class="col-sm-10">
+        <%= form.text_field :nota %>
+      </div>
+    </div>
+    <%= form.fields_for :document do |document_fields| %>
+      <div class="form-group row">
+        <%= document_fields.label :link , :class => "col-sm-2 col-form-label"%>
+        <div class="col-sm-10">
+          <%= document_fields.text_field :link %>
+        </div>
+      </div>
+    <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions text-center">
+      <%= form.submit  "Cadastrar",:class => "btn btn-info" %>
+      <%= link_to 'Voltar', requests_path ,:class => "btn btn-danger"%>
+    </div>
+
   </div>
 <% end %>

@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Tipo:</strong>
-  <%= @request.tipo %>
-</p>
+  <p>
+    <strong>Tipo:</strong>
+    <%= @request.tipo %>
+  </p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @request.status %>
-</p>
+  <p>
+    <strong>Status:</strong>
+    <%= @request.status %>
+  </p>
 
-<p>
-  <strong>Nota:</strong>
-  <%= @request.nota %>
-</p>
+  <p>
+    <strong>Nota:</strong>
+    <%= @request.nota %>
+  </p>
 
-<%= link_to 'Edit', edit_request_path(@request) %> |
-<%= link_to 'Back', requests_path %>
+  <%= link_to 'Editar', edit_request_path(@request) %> |
+  <%= link_to 'Voltar', requests_path %>
+</div>
