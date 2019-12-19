@@ -2,7 +2,7 @@
 
 <h1>Teachers</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nome</th>
@@ -13,16 +13,8 @@
   </thead>
 
   <tbody>
-    <% @teachers.each do |teacher| %>
-      <tr>
-        <td><%= teacher.nome %></td>
-        <td><%= teacher.matricula %></td>
-        <td><%= teacher.especialidade %></td>
-        <td><%= link_to 'Show', teacher %></td>
-        <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
-        <td><%= link_to 'Destroy', teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%= render @teachers %>
+    <%= paginate @teachers %>
   </tbody>
 </table>
 

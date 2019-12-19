@@ -1,0 +1,8 @@
+<tr>
+    <td><%= teacher.nome %></td>
+    <td><%= teacher.matricula %></td>
+    <td><%= teacher.especialidade %></td>
+    <td><%= link_to 'Detalhes', teacher %></td>
+    <td><%= link_to 'Editar', edit_teacher_path(teacher) %></td>
+    <td><%= link_to 'Deletar', teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

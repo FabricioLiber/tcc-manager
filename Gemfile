@@ -13,6 +13,8 @@ gem 'faker'
 gem 'cocoon'
 #Kaminari - pagination
 gem 'kaminari'
+# Internacionalização
+gem 'rails-i18n'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
